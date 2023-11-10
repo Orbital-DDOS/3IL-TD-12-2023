@@ -1,6 +1,6 @@
-# Project Name
+# Project Demo
 
-Brief description of your project.
+Demo project including demo test and quality tools ready to use.
 
 ## Table of Contents
 
