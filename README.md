@@ -32,7 +32,7 @@ Provide step-by-step instructions on how to install and set up your project.
 
 ```bash
 # Example installation commands
-git clone https://github.com/yourusername/your-project.git
+git clone https://github.com/GreedInc/3ILDemo.git
 cd your-project
 ./gradlew build
 ```
