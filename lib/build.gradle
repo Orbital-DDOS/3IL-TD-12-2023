@@ -49,10 +49,10 @@ checkstyle {
 
 checkstyleMain {
 	configFile = rootProject.file('checkstyle/checkstyle.xml')
-	source = ["src/main/java"]
 }
 
 checkstyleTest {
+	// If we want, we can define differents rules for the tests
     configFile = rootProject.file('checkstyle/checkstyle.xml')
 }
 
