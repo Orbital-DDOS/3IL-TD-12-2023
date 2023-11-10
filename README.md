@@ -38,12 +38,16 @@ cd your-project
 ```
 
 ## Usage
-Example command to run the application
+```bash
+# Example command to run the application
 ./gradlew run
+```
 
 ## Tests
-Example of test command
+```bash
+# Example of test command
 ./gradlew test
+```
 
 ## Code Quality
 
