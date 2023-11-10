@@ -18,17 +18,17 @@ Demo project including demo test and quality tools ready to use.
 
 ## Introduction
 
-Provide a brief introduction to your project. Explain its purpose, features, and any other relevant information.
+Demo project to help learning basic Java with simple quality tools.
 
 ## Getting Started
 
 ### Prerequisites
 
-List any prerequisites that are required to run your project.
+Ready to use gradle demo project.
 
 ### Installation
 
-Provide step-by-step instructions on how to install and set up your project.
+Step-by-step instructions on how to install and set up the project.
 
 ```bash
 # Example installation commands
@@ -48,16 +48,24 @@ Example of test command
 ## Code Quality
 
 ### Checkstyle
-Example Checkstyle command for main sources
+```bash
+# Example Checkstyle command for main sources
 ./gradlew checkstyleMain
+```
 
-Example Checkstyle command for test sources
+```bash
+# Example Checkstyle command for test sources
 ./gradlew checkstyleTest
+```
 
 ### Spotbugs
-Example SpotBugs command
+```bash
+# Example SpotBugs command
 ./gradlew spotbugsMain
+```
 
 ## Code Coverage
-Example code coverage command
+```bash
+# Example code coverage command
 ./gradlew jacocoTestReport
+```
