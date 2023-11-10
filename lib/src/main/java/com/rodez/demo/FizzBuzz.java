@@ -43,10 +43,6 @@ public class FizzBuzz {
     if (number < 1) {
       throw new IllegalArgumentException("Input number must be greater than or equal to 1.");
     }
-    String spotbugString = "test";
-    if (spotbugString == "test") {
-      // wrong way
-    }
 
     if (MathUtils.isDivisibleBy(number, FIZZ_NUMBER)
         && MathUtils.isDivisibleBy(number, BUZZ_NUMBER)) {
