@@ -24,7 +24,8 @@ dependencies {
 	spotbugs 'com.github.spotbugs:spotbugs:4.7.1'
 
     // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.10.0'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
