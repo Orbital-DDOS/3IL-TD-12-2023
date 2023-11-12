@@ -3,6 +3,7 @@ package com.rodez.demo;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -18,6 +19,15 @@ import org.junit.jupiter.params.provider.ValueSource;
  * @version 1.0
  */
 public class FizzBuzzTest {
+  /**
+   * FizzBuzz instance to use for the tests.
+   */
+  private FizzBuzz fizzBuzz;
+
+  @BeforeEach
+  public void init() {
+    this.fizzBuzz = new FizzBuzz();
+  }
 
   /**
    * Tests the {@link FizzBuzz#play(int)} method with a number that is not a
@@ -27,9 +37,8 @@ public class FizzBuzzTest {
    * @param numberToTest the number to test.
    */
   @ParameterizedTest
-  @ValueSource(ints = {1, 7})
+  @ValueSource(ints = { 1, 7 })
   public void testPlayWithRegularNumber(int numberToTest) {
-    FizzBuzz fizzBuzz = new FizzBuzz();
     assertEquals(String.valueOf(numberToTest), fizzBuzz.play(numberToTest));
   }
 
@@ -40,9 +49,8 @@ public class FizzBuzzTest {
    * @param numberToTest the number to test.
    */
   @ParameterizedTest
-  @ValueSource(ints = {3, 9})
+  @ValueSource(ints = { 3, 9 })
   public void testPlayWithMultipleOfThree(int numberToTest) {
-    FizzBuzz fizzBuzz = new FizzBuzz();
     assertEquals("Fizz", fizzBuzz.play(numberToTest));
   }
 
@@ -53,9 +61,8 @@ public class FizzBuzzTest {
    * @param numberToTest the number to test.
    */
   @ParameterizedTest
-  @ValueSource(ints = {5, 10})
+  @ValueSource(ints = { 5, 10 })
   public void testPlayWithMultipleOfFive(int numberToTest) {
-    FizzBuzz fizzBuzz = new FizzBuzz();
     assertEquals("Buzz", fizzBuzz.play(numberToTest));
   }
 
@@ -66,22 +73,20 @@ public class FizzBuzzTest {
    * @param numberToTest the number to test.
    */
   @ParameterizedTest
-  @ValueSource(ints = {15, 30})
+  @ValueSource(ints = { 15, 30 })
   public void testPlayWithMultipleOfThreeAndFive(int numberToTest) {
-    FizzBuzz fizzBuzz = new FizzBuzz();
     assertEquals("FizzBuzz", fizzBuzz.play(numberToTest));
   }
-  
+
   /**
-   * Tests the {@link FizzBuzz#play(int)} method with a number that is lower than 1.
-   * The expected result is an IllegalArgumentException.
+   * Tests the {@link FizzBuzz#play(int)} method with a number that is lower than
+   * 1. The expected result is an IllegalArgumentException.
    * 
    * @param numberToTest the number to test.
    */
   @ParameterizedTest
-  @ValueSource(ints = {-15, -1, 0})
+  @ValueSource(ints = { -15, -1, 0 })
   public void testPlayWithIncorrectNumbers(int numberToTest) {
-    FizzBuzz fizzBuzz = new FizzBuzz();
     assertThrows(IllegalArgumentException.class, () -> fizzBuzz.play(numberToTest));
   }
 }
