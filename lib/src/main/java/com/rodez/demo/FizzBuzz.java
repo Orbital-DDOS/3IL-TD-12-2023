@@ -18,18 +18,10 @@ package com.rodez.demo;
  * <p>This class is designed to demonstrate a basic implementation of the
  * FizzBuzz algorithm.
  *
- * @author Fabien ESCOURBIAC
+ * @author <your name>
  * @version 1.0
  */
 public class FizzBuzz {
-  /**
-   * Number that must be replaced by Fizz.
-   */
-  private static final int FIZZ_NUMBER = 3;
-  /**
-   * Number that must be replaced by Buzz.
-   */
-  private static final int BUZZ_NUMBER = 5;
 
   /**
    * Plays the FizzBuzz game for a given number and returns the corresponding
@@ -40,19 +32,6 @@ public class FizzBuzz {
    * @throws IllegalArgumentException If the input number is less than 1.
    */
   public String play(int number) {
-    if (number < 1) {
-      throw new IllegalArgumentException("Input number must be greater than or equal to 1.");
-    }
-
-    if (MathUtils.isDivisibleBy(number, FIZZ_NUMBER)
-        && MathUtils.isDivisibleBy(number, BUZZ_NUMBER)) {
-      return "FizzBuzz";
-    } else if (MathUtils.isDivisibleBy(number, FIZZ_NUMBER)) {
-      return "Fizz";
-    } else if (MathUtils.isDivisibleBy(number, BUZZ_NUMBER)) {
-      return "Buzz";
-    } else {
-      return String.valueOf(number);
-    }
+    return null;
   }
 }

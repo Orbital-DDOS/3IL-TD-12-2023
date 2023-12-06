@@ -28,7 +28,6 @@ public class SpotBugsErrorExample {
     SpotBugsErrorExample obj1 = new SpotBugsErrorExample("Hello");
     SpotBugsErrorExample obj2 = null;
 
-    // This may raise a potential null dereference warning in SpotBugs
     if (obj1.equals(obj2)) {
       System.out.println("Objects are equal");
     } else {
