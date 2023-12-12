@@ -32,12 +32,14 @@ public class FizzBuzz {
    * @throws IllegalArgumentException If the input number is less than 0.
    */
   public String play(int number) throws IllegalArgumentException{
+    if(number < 0)
+      throw new IllegalArgumentException("CKC");
     if(number % 3 == 0){
       if(number % 5 == 0)
         return "FizzBuzz";
       return "Fizz"; }
       if(number % 5 == 0)
       return "Buzz";
-    return null;
+    return Integer.toString(number);
   }
 }
