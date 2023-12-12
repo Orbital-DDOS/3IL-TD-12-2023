@@ -29,9 +29,15 @@ public class FizzBuzz {
    *
    * @param number The input number for the FizzBuzz game.
    * @return The FizzBuzz output as a String.
-   * @throws IllegalArgumentException If the input number is less than 1.
+   * @throws IllegalArgumentException If the input number is less than 0.
    */
-  public String play(int number) {
+  public String play(int number) throws IllegalArgumentException{
+    if(number % 3 == 0){
+      if(number % 5 == 0)
+        return "FizzBuzz";
+      return "Fizz"; }
+      if(number % 5 == 0)
+      return "Buzz";
     return null;
   }
 }
